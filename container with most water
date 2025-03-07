@@ -6,7 +6,7 @@ public:
         int i=0,j=n-1;
         int max_area=0;
         while(i<j)
-        {
+        {    // calculate area of rectangle --> width * height
             int sum=(j-i) * min(heights[i],heights[j]);   //min height to contain water 
             max_area=max(sum,max_area);
 
